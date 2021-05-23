@@ -1,7 +1,7 @@
 ---
 - name: get rpm file for minikube
   get_url:
-    src: https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    url: https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
     dest: /opt/minikube.rpm
 
 - name: Install rpm from file
