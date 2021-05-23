@@ -1,0 +1,11 @@
+---
+- name: get rpm file for minikube
+  geturl:
+    src: https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    dest: /opt/minikube.rpm
+
+- name: Install rpm from file
+  yum:
+    name: /opt/minikube.rpm
+    state: present
+    
