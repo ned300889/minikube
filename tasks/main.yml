@@ -8,3 +8,4 @@
   yum:
     name: /opt/minikube.rpm
     state: present
+    disable_gpg_check: true # don't judge me
